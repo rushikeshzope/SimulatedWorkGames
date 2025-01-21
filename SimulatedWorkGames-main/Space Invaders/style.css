@@ -9,57 +9,61 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #000;
-    font-family: Arial, sans-serif;
-    color: white;
+    background-color: #1a1a2e;
+    font-family: 'Roboto', sans-serif;
+    color: #eaeaea;
 }
 
 .game-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .game-info {
     display: flex;
     justify-content: space-between;
-    width: 400px;
-    padding: 10px;
-    font-size: 1.2rem;
+    width: 450px;
+    padding: 15px;
+    font-size: 1.4rem;
+    background-color: #162447;
+    border-radius: 10px;
 }
 
 #grid {
     display: grid;
-    grid-template-columns: repeat(15, 20px);
-    grid-template-rows: repeat(15, 20px);
-    gap: 1px;
-    background-color: #111;
-    border: 2px solid #333;
+    grid-template-columns: repeat(15, 24px);
+    grid-template-rows: repeat(15, 24px);
+    gap: 2px;
+    background-color: #0f3460;
+    border: 3px solid #1f4068;
+    border-radius: 8px;
 }
 
 .cell {
-    width: 20px;
-    height: 20px;
-    background-color: #111;
-    border: 1px solid #222;
+    width: 24px;
+    height: 24px;
+    background-color: #162447;
+    border: 1px solid #1b1b2f;
+    border-radius: 4px;
 }
 
 .shooter {
-    background-color: #0f0;
+    background-color: #00ff00;
 }
 
 .invader {
-    background-color: #f00;
+    background-color: #ff5733;
 }
 
 .laser {
-    background-color: #0ff;
+    background-color: #21e6c1;
 }
 
 .boom {
-    background: radial-gradient(circle, yellow, red);
-    animation: explosion 0.5s ease-out;
+    background: radial-gradient(circle, #ffe600, #ff4500);
+    animation: explosion 0.4s ease-out;
 }
 
 @keyframes explosion {
@@ -68,27 +72,28 @@ body {
         opacity: 1;
     }
     100% {
-        transform: scale(2);
+        transform: scale(2.5);
         opacity: 0;
     }
 }
 
 .controls {
     text-align: center;
-    color: #666;
-    padding: 10px;
+    color: #c0c0c0;
+    padding: 12px;
 }
 
 button {
-    background-color: #222;
-    color: white;
+    background-color: #162447;
+    color: #eaeaea;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
     cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #444;
+    background-color: #1f4068;
 }
