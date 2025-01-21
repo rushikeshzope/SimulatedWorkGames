@@ -1,14 +1,14 @@
 body {
     font-family: "Roboto", Arial, sans-serif;
     text-align: center;
-    background-color: #e8f5e9;
+    background-color: #637ac6;
     margin: 0;
     padding: 0;
   }
   
   h3 {
     margin: 10px 0;
-    color: #2e7d32;
+    color: #0d1a58;
     font-weight: 600;
     font-size: 18px;
   }
@@ -16,7 +16,7 @@ body {
   button {
     margin: 10px;
     padding: 10px 20px;
-    background-color: #66bb6a;
+    background-color: #2a6f9c;
     color: white;
     border: none;
     border-radius: 8px;
@@ -27,14 +27,14 @@ body {
   }
   
   button:hover {
-    background-color: #43a047;
+    background-color: #1a3c72;
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
   }
   
   .grid {
     margin: 20px auto;
-    border: 3px solid #388e3c;
+    border: 3px solid #053a6b;
     height: 180px;
     width: 180px;
     display: flex;
